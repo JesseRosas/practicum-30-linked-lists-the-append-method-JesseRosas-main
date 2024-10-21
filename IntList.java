@@ -12,20 +12,19 @@ public class IntList {
   }
 
   // ** TO COMPLETE **
-  public void append(int new_value) {
-    IntNode n = new IntNode(new_value);
+  public void append(Integer new_value) {
+    IntNode n = new IntNode(new_value, null); // Create a new node with null next pointer
   
     if (head == null) {
-      head = n;
+      head = n; // If list is empty, make the new node the head
     } else {
       IntNode tempPtr = head;
       while (tempPtr.getNext() != null) {
         tempPtr = tempPtr.getNext();
       }
-      tempPtr.setNext(n);
+      tempPtr.setNext(n); // Set the next pointer of the last node to the new node
     }
   }
-  
   
     
     
@@ -34,7 +33,7 @@ public class IntList {
     
     // if not empty, search for last node and append
 
-}
+
 
     
   // Display Method
@@ -51,3 +50,4 @@ public class IntList {
     }
   }
 }
+

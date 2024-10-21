@@ -1,7 +1,7 @@
 public class IntNode {
   private int value;
   private IntNode next;
-
+  
   public IntNode(int value, IntNode next) {
     this.value = value;
     this.next = next;

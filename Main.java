@@ -24,7 +24,7 @@ public class Main {
 
     // Test 3
     System.out.println("Expected output: 10 20 30");
-    num_list.displayList();
+    nums_list.displayList();
   }
 
 }
